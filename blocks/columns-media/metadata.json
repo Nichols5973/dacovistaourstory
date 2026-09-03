@@ -1,0 +1,38 @@
+{
+  "variantName": "columns-media",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-09-03T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.covista.com/our-story",
+    "originPage": "Our Story landing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "mixed",
+    "density": "spacious",
+    "purpose": "media-text",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image column + text column (heading + paragraph + optional CTA)",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "side-by-side media and text feature rows",
+      "image + text sections with an optional call-to-action",
+      "two-column narrative layouts (text next to a supporting list)"
+    ],
+    "notSuitableFor": [
+      "grids of repeating self-contained cards",
+      "interactive components (tabs, accordion, carousel)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/our-story"],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-03T00:00:00.000Z"
+  }
+}

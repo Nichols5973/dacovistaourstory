@@ -1,0 +1,80 @@
+/* Covista brand design tokens + fonts — migrated from covista.com */
+
+/* Adobe Fonts (Acumin Pro Wide) — served from Typekit CDN with embedded primer */
+@font-face {
+  font-family: acumin-pro-wide-light;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("https://use.typekit.net/af/8f5b77/00000000000000007735d429/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),
+    url("https://use.typekit.net/af/8f5b77/00000000000000007735d429/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff");
+}
+
+@font-face {
+  font-family: acumin-pro-wide-reg;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("https://use.typekit.net/af/717208/00000000000000007735d452/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),
+    url("https://use.typekit.net/af/717208/00000000000000007735d452/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff");
+}
+
+@font-face {
+  font-family: acumin-pro-wide-medium;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("https://use.typekit.net/af/04bc3d/00000000000000007735d438/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),
+    url("https://use.typekit.net/af/04bc3d/00000000000000007735d438/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff");
+}
+
+@font-face {
+  font-family: acumin-pro-wide-semi;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("https://use.typekit.net/af/21a4cd/00000000000000007735d442/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),
+    url("https://use.typekit.net/af/21a4cd/00000000000000007735d442/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff");
+}
+
+@font-face {
+  font-family: acumin-pro-wide-bold;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("https://use.typekit.net/af/2cfac8/00000000000000007735d419/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),
+    url("https://use.typekit.net/af/2cfac8/00000000000000007735d419/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff");
+}
+
+:root {
+  /* brand fonts */
+  --heading-font-family: acumin-pro-wide-medium, helvetica, arial, sans-serif;
+  --heading-font-family-semi: acumin-pro-wide-semi, helvetica, arial, sans-serif;
+  --body-font-family: acumin-pro-wide-light, helvetica, arial, sans-serif;
+
+  /* brand colors */
+  --background-color: #fff;
+  --text-color: #000;
+  --link-color: #1b4929;
+  --link-hover-color: #476b52;
+  --brand-green: #1b4929;
+  --brand-green-dark: #163a21;
+  --accent-cream: #fff9f5;
+  --cta-pink: #d7b5b9;
+
+  /* brand heading sizes (desktop) */
+  --heading-size-xxl: 48px;
+  --heading-size-xl: 40px;
+  --heading-size-l: 30px;
+  --heading-size-m: 24px;
+  --heading-size-s: 20px;
+  --heading-size-xs: 18px;
+
+  /* spacing */
+  --content-max-width: 1200px;
+}

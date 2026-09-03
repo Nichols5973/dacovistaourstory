@@ -1,0 +1,229 @@
+/* Block: columns-media — media + text feature rows, narrative split, anchor nav */
+
+/* Values extracted from covista.com/our-story computed styles. */
+
+/* ---------- Base (mobile-first) ---------- */
+.columns-media > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ---------- Media rows (image + heading + paragraph + optional CTA) ---------- */
+.columns-media-media-row .columns-media-img-col img {
+  width: 100%;
+}
+
+.columns-media-media-row .columns-media-text-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* heading — maroon accent used on the light-background media rows */
+.columns-media-media-row h2 {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.6px;
+  color: #82404c;
+}
+
+.columns-media-media-row p {
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: -0.27px;
+  color: #000;
+}
+
+.columns-media-media-row h2 + p {
+  margin-top: 16px;
+}
+
+/* CTA — square pink button with trailing arrow box (source design) */
+.columns-media-media-row .button-container {
+  margin-top: 24px;
+  display: flex;
+  align-items: stretch;
+  gap: 2px;
+}
+
+.columns-media a.button:any-link {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 10px 16px;
+  font-family: var(--heading-font-family);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  background-color: var(--cta-pink);
+  color: #000;
+  white-space: nowrap;
+}
+
+.columns-media-media-row .button-container::after {
+  content: "→";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  background-color: #b98a90;
+  color: #000;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.columns-media a.button:hover,
+.columns-media a.button:focus {
+  background-color: var(--brand-green);
+  color: #fff;
+}
+
+/* ---------- Narrative split (#approach: text | supporting list) ---------- */
+.columns-media-split h2 {
+  margin: 0 0 24px;
+  font-family: var(--heading-font-family);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.6px;
+  color: #000;
+}
+
+.columns-media-split h3 {
+  margin: 0;
+  font-family: var(--body-font-family);
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+  color: #000;
+}
+
+.columns-media-split p {
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: -0.27px;
+}
+
+.columns-media-split h3 + p {
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+
+/* ---------- Anchor navigation row ---------- */
+
+/* h3 + ul live inside a single cell; make that cell the flex container. */
+.columns-media-nav > div {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 12px 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.columns-media-nav h3 {
+  margin: 0;
+  margin-right: auto;
+  font-family: var(--heading-font-family-semi);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: normal;
+  color: var(--brand-green);
+}
+
+.columns-media-nav h3 a:any-link {
+  color: var(--brand-green);
+}
+
+.columns-media-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.columns-media-nav ul a:any-link {
+  font-family: var(--heading-font-family-semi);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--brand-green);
+}
+
+.columns-media-nav ul a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Dark section (#name) overrides ---------- */
+.section.dark .columns-media-media-row h2,
+.section.dark .columns-media-media-row p {
+  color: #fff9f5;
+}
+
+/* ---------- Desktop ---------- */
+@media (width >= 900px) {
+  /* media rows: image column ~40%, text ~60%, vertically centered */
+  .columns-media > .columns-media-media-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .columns-media-media-row .columns-media-img-col {
+    flex: 0 0 40%;
+  }
+
+  .columns-media-media-row .columns-media-text-col {
+    flex: 1;
+  }
+
+  /* reversed variant — image on the right */
+  .columns-media.reversed > .columns-media-media-row,
+  .columns-media > .columns-media-media-row.reversed {
+    flex-direction: row-reverse;
+  }
+
+  /* dark "Our name" row is a 50/50 split with edge-to-edge image */
+  .section.dark .columns-media > .columns-media-media-row {
+    gap: 0;
+    align-items: stretch;
+  }
+
+  .section.dark .columns-media-media-row .columns-media-img-col {
+    flex: 0 0 50%;
+  }
+
+  .section.dark .columns-media-media-row .columns-media-text-col {
+    padding: 40px 0 40px 56px;
+  }
+
+  .section.dark .columns-media-media-row .columns-media-img-col img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* narrative split — 50/50, tops aligned */
+  .columns-media > .columns-media-split {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  .columns-media-split > div {
+    flex: 1;
+  }
+}

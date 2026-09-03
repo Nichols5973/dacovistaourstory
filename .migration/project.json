@@ -1,0 +1,11 @@
+{
+  "type": "da",
+  "sites": {
+    "dacovistaourstory": {
+      "previewOrg": "nichols5973",
+      "previewSite": "dacovistaourstory",
+      "contentHostUrl": "author-p130360-e1272151.adobeaemcloud.com",
+      "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json"
+    }
+  }
+}
