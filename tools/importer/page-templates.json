@@ -1,12 +1,178 @@
 {
   "templates": [
     {
+      "name": "home",
+      "urls": [
+        "https://www.covista.com/"
+      ],
+      "representativeUrl": "https://www.covista.com/",
+      "description": "To be named in naming step",
+      "blocks": [
+        {
+          "name": "hero-overlay",
+          "instances": [
+            "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.edge-to-edge.no-padding.no-max-width.layout.layout--atge-one-column:nth-of-type(1) .c-banner.c-cv-banner"
+          ]
+        },
+        {
+          "name": "cards-stats",
+          "instances": [
+            "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.standard-width.p-universal-bg-color--none.overlap.pad-bottom-40-desktop.cc-bg-secondary-mobile.p-section__align--none.layout.layout--atge-one-column"
+          ]
+        },
+        {
+          "name": "cards-logos",
+          "instances": [
+            "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.standard-width.p-universal-bg-color--secondary.pad-bottom-0.pad-top-0.p-section__align--none.layout.layout--atge-one-column"
+          ]
+        },
+        {
+          "name": "columns-media",
+          "instances": [
+            "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.standard-width.p-universal-bg-color--none.pad-top-0.pad-bottom-0.p-section__align--none.edge-to-edge__mobile.layout.layout--atge-one-column .c-card.c-cv-card",
+            "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.edge-to-edge.no-padding.no-max-width.p-universal-bg-color--none.pad-top-20-desktop.pad-bottom-40-desktop.p-section__align--none.layout.layout--atge-one-column .c-card.c-cv-card",
+            "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.edge-to-edge.no-padding.no-max-width.p-universal-bg-color--none.pad-y-0.pad-bottom-50-desktop.p-section__align--none.layout.layout--atge-one-column .c-card.c-cv-card",
+            "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__two-column.edge-to-edge.no-padding.no-max-width.layout__split--5050.sidebar-first.sidebar-left.p-universal-bg-color--secondary.pad-left-10-desktop.p-section__align--none.layout__spacing--default.no_constrain_bg_witdh.layout.layout--atge-two-column .c-card.c-cv-card"
+          ]
+        },
+        {
+          "name": "carousel-news",
+          "instances": [
+            "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.edge-to-edge.no-padding.no-max-width.p-universal-bg-color--none.carousel-view--edge-to-edge.p-section__align--none.layout.layout--atge-one-column .slick-slider"
+          ]
+        }
+      ],
+      "urlPattern": "/",
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Full-bleed dark hero: background video/photo of a healthcare",
+          "selector": "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.edge-to-edge.no-padding.no-max-width.layout.layout--atge-one-column:nth-of-type(1)",
+          "style": null,
+          "blocks": [
+            "hero-overlay"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Row of three stat items overlapping the hero (cream card pan",
+          "selector": "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.standard-width.p-universal-bg-color--none.overlap.pad-bottom-40-desktop.cc-bg-secondary-mobile.p-section__align--none.layout.layout--atge-one-column",
+          "style": null,
+          "blocks": [
+            "cards-stats"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Two-column feature: large photo of two medical professionals",
+          "selector": "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.standard-width.p-universal-bg-color--none.pad-top-0.pad-bottom-0.p-section__align--none.edge-to-edge__mobile.layout.layout--atge-one-column",
+          "style": "accent",
+          "blocks": [
+            "columns-media"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Centered intro text on a soft accent (cream) background: 'Ou",
+          "selector": "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.optimized-width.p-universal-bg-color--secondary.pad-top-0.pad-bottom-0.p-section__align--none.layout.layout--atge-one-column",
+          "style": "accent",
+          "blocks": [],
+          "defaultContent": [
+            "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.optimized-width.p-universal-bg-color--secondary.pad-top-0.pad-bottom-0.p-section__align--none.layout.layout--atge-one-column"
+          ]
+        },
+        {
+          "id": "section-5",
+          "name": "Row of five institution logos (American University of the Ca",
+          "selector": "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.standard-width.p-universal-bg-color--secondary.pad-bottom-0.pad-top-0.p-section__align--none.layout.layout--atge-one-column",
+          "style": "accent",
+          "blocks": [
+            "cards-logos"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6",
+          "name": "Single centered 'Learn more' CTA button beneath the logos.",
+          "selector": "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.optimized-width.p-universal-bg-color--secondary.pad-top-20.pad-bottom-40.p-section__align--none.layout.layout--atge-one-column",
+          "style": "accent",
+          "blocks": [],
+          "defaultContent": [
+            "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.optimized-width.p-universal-bg-color--secondary.pad-top-20.pad-bottom-40.p-section__align--none.layout.layout--atge-one-column"
+          ]
+        },
+        {
+          "id": "section-7",
+          "name": "Two-column media+text: photo of a male medical professional ",
+          "selector": "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.edge-to-edge.no-padding.no-max-width.p-universal-bg-color--none.pad-top-20-desktop.pad-bottom-40-desktop.p-section__align--none.layout.layout--atge-one-column",
+          "style": null,
+          "blocks": [
+            "columns-media"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-8",
+          "name": "Two-column media+text (reversed): heading 'Careers that blen",
+          "selector": "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.edge-to-edge.no-padding.no-max-width.p-universal-bg-color--none.pad-y-0.pad-bottom-50-desktop.p-section__align--none.layout.layout--atge-one-column",
+          "style": null,
+          "blocks": [
+            "columns-media"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-9",
+          "name": "Two-column split (accent background): left panel 'Stock info",
+          "selector": "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__two-column.edge-to-edge.no-padding.no-max-width.layout__split--5050.sidebar-first.sidebar-left.p-universal-bg-color--secondary.pad-left-10-desktop.p-section__align--none.layout__spacing--default.no_constrain_bg_witdh.layout.layout--atge-two-column",
+          "style": "accent",
+          "blocks": [
+            "columns-media"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-10",
+          "name": "Centered section heading 'News and stories'.",
+          "selector": "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.standard-width.p-universal-bg-color--none.pad-top-30.p-section__align--none.layout.layout--atge-one-column",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.standard-width.p-universal-bg-color--none.pad-top-30.p-section__align--none.layout.layout--atge-one-column"
+          ]
+        },
+        {
+          "id": "section-11",
+          "name": "Horizontally-scrolling carousel of news/story cards; each ca",
+          "selector": "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.edge-to-edge.no-padding.no-max-width.p-universal-bg-color--none.carousel-view--edge-to-edge.p-section__align--none.layout.layout--atge-one-column",
+          "style": null,
+          "blocks": [
+            "carousel-news"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-12",
+          "name": "Light background, small footnote/legal text row.",
+          "selector": "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.standard-width.p-universal-bg-color--none.p-section__align--none.layout.layout--atge-one-column:nth-of-type(12)",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.standard-width.p-universal-bg-color--none.p-section__align--none.layout.layout--atge-one-column:nth-of-type(12)"
+          ]
+        }
+      ]
+    },
+    {
       "name": "our-story",
       "urls": [
         "https://www.covista.com/our-story"
       ],
       "representativeUrl": "https://www.covista.com/our-story",
-      "description": "",
+      "description": "To be named in naming step",
       "blocks": [
         {
           "name": "hero-overlay",
@@ -39,7 +205,6 @@
           ]
         }
       ],
-      "urlPattern": "/*",
       "sections": [
         {
           "id": "section-1",
@@ -163,7 +328,8 @@
             "body > div.dialog-off-canvas-main-canvas > div.layout-container > main.page--main > div.layout-content > div.region.region__content > article.node__page.node__cv-page.node__page--full.node__cv-page--full.node.node--type-page.node--view-mode-full > div.node__content > div.t-layout__one-column.standard-width.p-universal-bg-color--none.pad-top-40.pad-bottom-30.p-section__align--none.layout.layout--atge-one-column"
           ]
         }
-      ]
+      ],
+      "urlPattern": "/*"
     }
   ],
   "metadata": {

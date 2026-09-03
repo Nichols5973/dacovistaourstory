@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-stats",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-09-03T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.covista.com/",
+    "originPage": "Homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "stats",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "repeating stat items (icon + large figure + short label)",
+    "buttonCount": 0,
+    "imageCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "key metric / stat callout rows",
+      "icon-led feature highlights with a big number and label",
+      "at-a-glance figures overlapping or beneath a hero"
+    ],
+    "notSuitableFor": [
+      "story/article cards with photos and headlines",
+      "logo grids"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-03T00:00:00.000Z"
+  }
+}
