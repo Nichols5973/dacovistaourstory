@@ -110,7 +110,7 @@
   color: #000;
 }
 
-.columns-media-split p {
+.columns-media-split > div p {
   font-family: var(--body-font-family);
   font-size: 18px;
   line-height: 1.66;
